@@ -1,0 +1,41 @@
+## cara2_3_bp_checker Req-01
+In_auto_con and cb_ctrlvalue_lt_60 are true when t_et_0 is true and next not_reach_60 is true.
+
+## cara2_2_bp_handler7_pulse_wave_handler Req-02
+If al_ok is true, and cb_ctrlvalue_valid is not true,in the next time al_invalid1 is true.
+
+##cara2_2_bp_handler5_arterial_line_blood_pressure Req-03
+If al_invalid1 and t_ge_90 are true, then cb_alram_alinvalid11 is true, and next al_invalid1 is set to be true.
+
+##cara_mode Req-04
+When auto_control_mode is running, and the arterial_line or pulse_wave or cuff is lost, an alarm should sound in 60 seconds.
+
+##elevator Req-05
+If o3 is pushed, o3 will not be popped before floor3 is reached.
+
+##elevator Req-06
+Whenever the button to some floor is pushed, the elevator will reach there.
+
+##rescue_robot_1_2x2 Req-07
+if carryPerson is available, then moves to r2 or r4.
+
+##rescue_robot_2_5 Req-08
+if carryPerson is available, it will be available until medic is available.
+
+##telecome5_6_new_user Req-09
+if registration_form is requested, next local_printing is executed when registration_terms are displayed. 
+
+##telecome5_4_information Req-10
+If overview_of_subject  is available, subject or search_function or information_back can be selected.
+
+##telecome5_6_new_user Req-11
+Registration form is filled and introduction screen is displayed.
+
+##telecome5_3_online_reservation Req-12
+When introduction_screen is displayed, eventually overview_of_subject is available.
+
+## takeover Req-13
+When an anchor vehicle appears in front, the system sets the time in the next state,then the system will send the message,then when the driver presses the switch button, the vehicle switches modes£®
+
+## overtake Req-14
+Start monitoring with, the vehicle is detected to fall behind the set speed two times in a short time, end monitoring with, the system will help the driver to overtake.

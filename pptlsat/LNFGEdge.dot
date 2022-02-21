@@ -1,0 +1,23 @@
+digraph G1{
+color=lightgrey;
+style=filled;
+label="Edges of LNFG";
+b[shape=none,margin=0,label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD>Edge ID</TD><TD>state formula</TD><TD>-&gt;</TD></TR>
+<TR><TD>Edge1</TD><TD>TRUE</TD><TD>Node1-&gt;Node2</TD>
+</TR>
+<TR><TD>Edge2</TD><TD>!(Q)</TD><TD>Node1-&gt;Node3</TD>
+</TR>
+<TR><TD>Edge3</TD><TD>!(Q)</TD><TD>Node1-&gt;Node4</TD>
+</TR>
+<TR><TD>Edge4</TD><TD>(R)</TD><TD>Node2-&gt;Node3</TD>
+</TR>
+<TR><TD>Edge5</TD><TD>(R)</TD><TD>Node2-&gt;Node4</TD>
+</TR>
+<TR><TD>Edge6</TD><TD>TRUE</TD><TD>Node3-&gt;Node3</TD>
+</TR>
+<TR><TD>Edge7</TD><TD>TRUE</TD><TD>Node3-&gt;Node4</TD>
+</TR>
+</TABLE>>];
+}

@@ -1,0 +1,16 @@
+初始节点集合: 
+ !(Q) || ()(R)
+节点集合: 
+ !(Q) || ()(R)
+ (R)
+ TRUE
+ EMPTY
+边的集合: 
+ (!(Q) || ()(R),TRUE,(R))
+ (!(Q) || ()(R),!(Q),TRUE)
+ (!(Q) || ()(R),!(Q),EMPTY)
+ ((R),(R),TRUE)
+ ((R),(R),EMPTY)
+ (TRUE,TRUE,TRUE)
+ (TRUE,TRUE,EMPTY)
+标记集合 : 

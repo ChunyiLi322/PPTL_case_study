@@ -1,0 +1,17 @@
+digraph G{
+color=lightgrey;
+style=filled;
+label="Nodes of LNFG";
+a[shape=none,margin=0,label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD>Node ID</TD><TD>Corresponding PPTL formula</TD><TD>Label</TD></TR>
+<TR><TD>Node1</TD><TD>!(Q) || ()(R)</TD><TD></TD>
+</TR>
+<TR><TD>Node2</TD><TD>(R)</TD><TD></TD>
+</TR>
+<TR><TD>Node3</TD><TD>TRUE</TD><TD></TD>
+</TR>
+<TR><TD>Node4</TD><TD>EMPTY</TD><TD></TD>
+</TR>
+</TABLE>>];
+}

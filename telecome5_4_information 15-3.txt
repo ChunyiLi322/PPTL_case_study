@@ -1,0 +1,76 @@
+When introduction_screen is displayed, eventually overview_of_subject is available.
+( P ) -> ()( Q )
+
+If overview_of_subject  is available, subject or search_function or information_back can be selected.  *
+无法处理 subject 被识别为JJ
+
+If search_function is selected and subject is found, subject_information_display starts.
+无法处理  starts被识别NNS
+
+If subject_information_display terminates, overview_of_subject is available.
+( P ) -> ()( Q )
+
+If subject is not found, overview_of_subject is available.
+( P ) -> ()( Q )
+
+If information_back is selected, introduction_screen is displayed.
+( P ) -> ()( Q )
+##4.1
+
+
+If subject_information_displaying starts, text_data_information is displayed. 
+无法处理  starts被识别NNS
+
+If scroll_text is selected, text_data_information is displayed. 
+( P ) -> ()( Q )
+
+If  telephonic_info or ordering is selected,  text_data_information is displayed. 
+hashmap= {P= telephonic_info or ordering is selected, Q= text_data_information is displayed, PPTLformula=( P ) -> ()( Q )}
+P  telephonic_info or ordering is selected
+Q  text_data_information is displayed
+PPTLformula ( P ) -> ()( Q )
+
+
+If apply_register is selected and printout is wanted,  text_data_information is displayed. 
+P:  apply_register is selected
+R:  printout is wanted
+S:  text_data_information is displayed
+PPTLformula: ( ( P ) && ( R ) ) -> ()( S )
+
+
+If apply_register is selected and form is filled and printout is not wanted,  text_data_information is displayed. 
+P  apply_register is selected
+R  printout is not wanted
+S  text_data_information is displayed
+PPTLformula ( ( P ) && ( R ) ) -> ()( S )
+
+
+
+If apply_register is selected and form is not filled,  text_data_information is displayed. 
+P  apply_register is selected
+Q  form is not filled
+R  text_data_information is displayed
+PPTLformula ( ( P ) && ( Q ) ) -> ()( R )
+
+
+
+If selected_subject_back is selected, subject_information_display terminates.
+hashmap= {P= selected_subject_back is selected, Q= subject_information_display terminates, PPTLformula=( P ) -> ()( Q )}
+P  selected_subject_back is selected
+Q  subject_information_display terminates
+PPTLformula ( P ) -> ()( Q )
+
+
+If print_current_page or print_all is selected, text_data_information is displayed. 
+hashmap= {P= print_current_page or print_all is selected, Q= text_data_information is displayed, PPTLformula=( P ) -> ()( Q )}
+P  print_current_page or print_all is selected
+Q  text_data_information is displayed
+PPTLformula ( P ) -> ()( Q )
+
+
+
+
+if text_data_information is displayed, Scrolling_text or printing_current_page or printing_all or telephonic_info or ordering or applying_register or selected_subject_back can be selected.
+P:  text_data_information is displayed
+Q:  Scrolling_text or printing_current_page or printing_all or telephonic_info or ordering or applying_register or selected_subject_back be selected
+PPTLformula: ( P ) -> ()( Q )
